@@ -35,3 +35,48 @@ updates:
       interval: weekly
       day: saturday
       time: "07:00"
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /dockerfiles/agents
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /dockerfiles/app
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /dockerfiles/endorser
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /dockerfiles/tests
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /dockerfiles/trustregistry
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /dockerfiles/waypoint
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /scripts/k6
+    schedule:
+      interval: daily
+
+  - package-ecosystem: npm
+    directory: /scripts/k6
+    schedule:
+      interval: daily
